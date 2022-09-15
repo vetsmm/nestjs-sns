@@ -1,8 +1,21 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { SNS_OPTIONS } from '../sns.constants';
+import { SNS_OPTIONS } from './sns.constants';
 import * as sns from '@aws-sdk/client-sns';
-import * as fixtures from './fixtures';
-import {SnsService} from "../sns.service";
+import {SnsService} from "./sns.service";
+
+const mMetaData = {
+  httpStatusCode: 200,
+};
+export const mPublishCommand: sns.PublishCommandOutput = {
+  MessageId: 'test-id',
+  SequenceNumber: '123456',
+  $metadata: mMetaData,
+};
+
+export const mCreateTopicReponse: sns.CreateTopicCommandOutput = {
+  TopicArn: 'new-topic-arn',
+  $metadata: mMetaData,
+};
 
 jest.mock('@aws-sdk/client-sns', () => {
   const mSns = {
@@ -10,8 +23,8 @@ jest.mock('@aws-sdk/client-sns', () => {
   };
   return {
     SNSClient: jest.fn(() => mSns),
-    PublishCommand: jest.fn(() => fixtures.mPublishCommand),
-    CreateTopicCommand: jest.fn(() => fixtures.mCreateTopicReponse),
+    PublishCommand: jest.fn(() => mPublishCommand),
+    CreateTopicCommand: jest.fn(() => mCreateTopicReponse),
   };
 });
 
