@@ -1,6 +1,8 @@
 # compiled output
 /dist
 /node_modules
+/tmp
+/out-tsc
 
 # Logs
 logs
@@ -10,8 +12,9 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-# OS
+# System Files
 .DS_Store
+Thumbs.db
 
 # Tests
 /coverage
