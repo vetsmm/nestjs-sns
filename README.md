@@ -1,5 +1,20 @@
-# nestjs-sns
-A thin wrapper around the [@aws-sdk/client-sns](https://www.npmjs.com/package/@aws-sdk/client-sns) library to be used in NestJs applications.
+<p align="center">
+  <a href="http://nestjs.com/" target="blank">
+    <img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" />
+  </a>
+</p>
+
+<p align="center">
+  A thin wrapper around the [@aws-sdk/client-sns](https://www.npmjs.com/package/@aws-sdk/client-sns) library to be used in NestJs applications.
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/org/vetsmm"><img src="https://img.shields.io/npm/v/@vetsmm/nestjs-sns.svg" alt="NPM Version" /></a>
+  <a href="https://www.npmjs.com/org/vetsmm"><img src="https://img.shields.io/npm/l/@vetsmm/nestjs-sns.svg" alt="Package License" /></a>
+  <a href="https://www.npmjs.com/org/vetsmm"><img src="https://img.shields.io/npm/dm/@vetsmm/nestjs-sns.svg" alt="NPM Downloads" /></a>
+  <a href="https://opencollective.com/vmm#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
+</p>
+
 
 **Note: The only methods available out of the box are `publish` and `createTopic`. If you need additional methods you can do one of the following.**
 1. Fork this repo and do as you please
@@ -78,3 +93,5 @@ export class MessageController {
   }
 }
 ```
+
+OG Fork from [nestjs-sns](https://github.com/eklemen/nestjs-sns)
