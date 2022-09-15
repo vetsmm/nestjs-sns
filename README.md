@@ -21,6 +21,13 @@
 2. Open an issue (or a PR :heart:)
 3. Manually via `this.snsService.snsClient.<SNS_METHOD>`
 
+### Installation
+
+```sh
+npm install --save @vetsmm/nestjs-sns
+#or
+yarn add @vetsmm/nestjs-sns
+```
 
 ## Getting Started
 Add and initialize the global module to your App.module.ts
@@ -94,4 +101,14 @@ export class MessageController {
 }
 ```
 
+### Contributing
+
+* [Mark Tripoli](https://github.com/triippz)
+
+### License
+
+MIT
+
+
+### Thanks To
 OG Fork from [nestjs-sns](https://github.com/eklemen/nestjs-sns)
