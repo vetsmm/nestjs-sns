@@ -1,6 +1,6 @@
 {
   "name": "@vetsmm/nestjs-sns",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NestJS module for AWS SNS",
   "author": "Mark Tripoli <markt@vetsmm.com>",
   "license": "MIT",
